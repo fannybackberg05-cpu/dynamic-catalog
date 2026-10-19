@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inlämningsuppgift - Produktkatalog</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <div class="container">
+        <a href="#" style="color: white; text-decoration: none; font-weight: bold;"></a>
+        <button id="hamburger-menu" class="hamburger-btn" aria-label="Öppna menyn">&#9776;</button>
+        <nav class="nav">
+            <ul class="menu">
+                <li><a href="#movies-section">Filmer</a></li>
+                <li><a href="#form-h1">Lägg till film</a></li>
+                <li><a href="#footer-links">Kontakta</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+    <main>
+        <section class="hero-section">
+            <h1 id="h1">Mina favoritfilmer</h1>
+            <p id="sub-title">Jag älskar Harry Potter...</p>
+        </section>
+        <section id="movies-section" class="movie-container"></section>
+       <section>
+         <div class="form-container">
+            <h1 id="form-h1">Lägg till din favoritfilm!</h1>
+                <form class="form">
+                    <label for="name">Namn:</label>
+                    <input id="name" type="text" placeholder="Namn">
+                    
+                    <label for="score">Betyg:</label>
+                    <input id="score" type="number" min="1" max="10" placeholder="1-10">
+                    
+                    <label for="age">År:</label>
+                    <input id="age" type="number" placeholder="År">
+                    
+                    <label for="about">Vad handlar filmen om?</label>
+                    <input id="about" type="text" maxlength="200" placeholder="Max 200 tecken">
+                    
+                    <button id="form-btn" type="submit">Lägg till film</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="simple-footer">
+        <p>&copy; 2026 Filmbiblioteket | Skapad med HTML, CSS & JS</p>
+</footer>
+</body>
+</html>
